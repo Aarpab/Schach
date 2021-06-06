@@ -1,6 +1,6 @@
 import pygame
 import sys
-
+ 
 pygame.init()
 screen = pygame.display.set_mode([944, 944])
 pygame.display.set_caption("Schach")
