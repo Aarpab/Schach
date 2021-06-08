@@ -1,5 +1,6 @@
 import pygame
 import sys
+import os
  
 pygame.init()
 screen = pygame.display.set_mode([944, 944])
@@ -41,19 +42,21 @@ class Figur :
         self.größe = größe
         self.nummer = nummer
 
-könig_weiß_b = pygame.image.load("spiele\\Schach\\Bilder\\könig_weiß.png")
-dame_weiß_b = pygame.image.load("spiele\\Schach\\Bilder\\dame_weiß.png")
-turm_weiß_b = pygame.image.load("spiele\\Schach\\Bilder\\turm_weiß.png")
-springer_weiß_b = pygame.image.load("spiele\\Schach\\Bilder\\springer_weiß.png")
-läufer_weiß_b = pygame.image.load("spiele\\Schach\\Bilder\\läufer_weiß.png")
-bauer_weiß_b = pygame.image.load("spiele\\Schach\\Bilder\\bauer_weiß.png")
+pfad = os.path.dirname(os.path.realpath(__file__))
 
-könig_schwarz_b = pygame.image.load("spiele\\Schach\\Bilder\\könig_schwarz.png")
-dame_schwarz_b = pygame.image.load("spiele\\Schach\\Bilder\\dame_schwarz.png")
-turm_schwarz_b = pygame.image.load("spiele\\Schach\\Bilder\\turm_schwarz.png")
-springer_schwarz_b = pygame.image.load("spiele\\Schach\\Bilder\\springer_schwarz.png")
-läufer_schwarz_b = pygame.image.load("spiele\\Schach\\Bilder\\läufer_schwarz.png")
-bauer_schwarz_b = pygame.image.load("spiele\\Schach\\Bilder\\bauer_schwarz.png")
+könig_weiß_b = pygame.image.load(pfad + "\\Bilder\\könig_weiß.png")
+dame_weiß_b = pygame.image.load(pfad + "\\Bilder\\dame_weiß.png")
+turm_weiß_b = pygame.image.load(pfad + "\\Bilder\\turm_weiß.png")
+springer_weiß_b = pygame.image.load(pfad + "\\Bilder\\springer_weiß.png")
+läufer_weiß_b = pygame.image.load(pfad + "\\Bilder\\läufer_weiß.png")
+bauer_weiß_b = pygame.image.load(pfad + "\\Bilder\\bauer_weiß.png")
+
+könig_schwarz_b = pygame.image.load(pfad + "\\Bilder\\könig_schwarz.png")
+dame_schwarz_b = pygame.image.load(pfad + "\\Bilder\\dame_schwarz.png")
+turm_schwarz_b = pygame.image.load(pfad + "\\Bilder\\turm_schwarz.png")
+springer_schwarz_b = pygame.image.load(pfad + "\\Bilder\\springer_schwarz.png")
+läufer_schwarz_b = pygame.image.load(pfad + "\\Bilder\\läufer_schwarz.png")
+bauer_schwarz_b = pygame.image.load(pfad + "\\Bilder\\bauer_schwarz.png")
 
 könig_weiß = Figur(472, 826, könig_weiß_b, "könig", "weiß", (118, 113))
 dame_weiß = Figur(354, 826, dame_weiß_b, "dame", "weiß", (118, 107))
